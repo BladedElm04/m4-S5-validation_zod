@@ -3,7 +3,7 @@ import { createProductBodySchema } from "../schema/createProductBody.schema";
 import { AnyZodObject, ZodError } from "zod";
 import { IValidateSchema } from "../interfaces/validateSchema.inteface";
 
-export class Validate {
+export class ValidateRequest {
     static execute(schemas: IValidateSchema){
        return async (req: Request, res: Response, next: NextFunction) => {
            try {
